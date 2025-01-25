@@ -1,8 +1,15 @@
 def wordcounter(string):
-    for char in string:
-        if char not in arr:
-            arr.append(char)
-    for char in arr:
-        for i in string:
-            if (i==char):
-                
+    words=string.split()
+    word_count={}
+    for char in words:
+        if char in word_count:
+            word_count[char]+=1
+        else:
+            word_count[char]=1
+    return word_count
+string=input("Enter string: ")
+word_counts=wordcounter(string)
+for word, count in word_counts.items():
+    print(f"{word}: {count}")
+ 
+
