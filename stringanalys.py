@@ -25,3 +25,4 @@ def stringanlys(string):
     print ("vowels:",vowels,"Consonants",consonants,"digits:",digits,"Symbols:",symbols)
 string=input("Enter the string:")
 stringanlys(string)
+print(string[::-1])
