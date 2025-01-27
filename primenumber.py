@@ -12,7 +12,6 @@ def isprime(n):
                         return False
         return True         
                     
-  
 def main():
     primeslist=[]
     while(True):
@@ -26,10 +25,9 @@ def main():
          v=isprime(n)
          if(v):
               primeslist.append(n)
-              print(n)
-    s_primeslist=sorted(primeslist)
-    print("Smallest prime number: ",s_primeslist[0])
-    print("Largest prime number: ",s_primeslist[-1])
+    print(primeslist)
+    print("Smallest prime number: ",primeslist[0])
+    print("Largest prime number: ",primeslist[-1])
 
         
 
