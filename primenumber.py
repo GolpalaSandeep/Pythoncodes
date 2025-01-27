@@ -14,17 +14,23 @@ def isprime(n):
                     
   
 def main():
+    primeslist=[]
     while(True):
           n1=int(input("Enter starting number : "))
           n2=int(input("Enter ending number : "))
           if(n1>0 and n2>0 and n1<n2):
                 break
           print("Enter valid numbers")
-    c=0
+
     for n in range(n1,n2+1):
          v=isprime(n)
          if(v):
+              primeslist.append(n)
               print(n)
+    s_primeslist=sorted(primeslist)
+    print("Smallest prime number: ",s_primeslist[0])
+    print("Largest prime number: ",s_primeslist[-1])
+
         
 
 main()
