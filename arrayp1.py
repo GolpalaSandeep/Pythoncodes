@@ -10,3 +10,4 @@ print("For loop sum: ",summ)
 print("Function sum: ",sum(Arr))
 
 print(Arr)
+
